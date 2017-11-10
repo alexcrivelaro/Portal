@@ -1,3 +1,3 @@
 # Portal em HTML.
 
-## Portal com comandos HTML mais utilizados..
+## Portal com comandos HTML mais utilizados.
