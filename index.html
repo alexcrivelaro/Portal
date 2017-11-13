@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Portal</title>
+        <link href="assets/css/style.css" rel="stylesheet"/>
+        <script type="text/javascript" src="assets/js/script.js"></script>
+    </head>
+    <body>
+        <div class="topo"> <!-- Inicio menu black - ok -->
+            <div class="topoint">
+                <div class="topoleft">
+                    <ul>
+                        <li><a href="./" class="ativo">Home</a></li>
+                        <li><a href="quem-somos">Quem Somos</a></li>
+                        <li><a href="anuncie-aqui">Anuncie Aqui</a></li>
+                        <li><a href="contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="toporight">
+                   <input type="image" src="assets/images/lupa.png" border="0" width="26" height="26"/>
+                   <input type="text" name="busca" class="topobusca" placeholder="Busca..."/>
+                   <a href=""><img src="assets/images/youtube.png" border"0" width="26" height="26"/></a>
+                   <a href=""><img src="assets/images/twitter.png" border"0" width="26" height="26"/></a>
+                   <a href=""><img src="assets/images/facebook.png" border"0" width="26" height="26"/></a>
+                   <a href=""><img src="assets/images/googleplus.png" border"0" width="26" height="26"/></a>
+                   <a href=""><img src="assets/images/rss.png" border"0" width="26" height="26"/></a>
+                </div>
+            </div>
+        </div>                <!-- Fim menu black - ok -->
+        <div class="topo2"> <!-- Inicio menu banner-logo - ok -->
+            <div class="topo2int">
+                <div class="logo">
+                    <img src="assets/images/logo.png" border="0" width="230"/ >
+                </div>
+                <div class="banner">
+                    <img src="assets/images/banner.png" border="0" width="650"/ >
+                </div>
+            </div>
+        </div>                 <!-- Fim menu banner-logo - ok -->
+        <div class="menu"> <!-- Inicio menu vermelho - ok -->
+            <div class="menuint">
+                <img src="assets/images/menu.png"   border="0" width="40" height="40" class="menuMobile" onclick="toggleMenu()"/>
+                <ul id="menu">
+                    <li><a href="./" class="ativo">Home</a></li>
+                    <li><a href="">Economia</a></li>
+                    <li>
+                        <a href="">Entretenimento</a>
+                        <img src="assets/images/arrowdown.png" border="0" width="10"/>
+                        <div class="submenu">
+                            <div class="submenu">
+                                <a href="./"><div class="submenuitem">Submenu 1</div></a>
+                                <a href="./"><div class="submenuitem">Submenu 2</div></a>
+                                <a href="./"><div class="submenuitem">Submenu 3</div></a>
+                                <a href="./"><div class="submenuitem">Submenu 4</div></a>
+                                <a href="./"><div class="submenuitem">Submenu 5</div></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="">Esportes</a>
+                        <img src="assets/images/arrowdown.png" border="0" width="10"/>
+                        <div class="submenu">
+                            <div class="submenu">
+                                <a href="./"><div class="submenuitem">Submenu 1</div></a>
+                                <a href="./"><div class="submenuitem">Submenu 2</div></a>
+                                <a href="./"><div class="submenuitem">Submenu 3</div></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="">Geral</a></li>
+                    <li>
+                        <a href="">Notícias</a>
+                        <img src="assets/images/arrowdown.png" border="0" width="10"/>
+                        <div class="submenu">
+                            <div class="submenu">
+                                <a href="./"><div class="submenuitem">Submenu 1</div></a>
+                                <a href="./"><div class="submenuitem">Submenu 2</div></a>
+                                <a href="./"><div class="submenuitem">Submenu 3</div></a>
+                                <a href="./"><div class="submenuitem">Submenu 4</div></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="">Polícia</a></li>
+                    <li><a href="">Vídeos</a></li>
+                </ul>
+            </div>
+        </div>                <!-- Fim menu vermelho - ok -->
+        <div class="ultimasNoticias"> <!-- Inicio menu Pesquisa - ok -->
+            <div class="ultimasNoticiasint">
+                <div class="ultimasNoticiasarea">
+                    <div class="ultimasNoticiastitulo">Últimas Notícias</div>
+                    <div class="ultimasNoticiasnoticia">Principais notícias da semana</div>
+                </div>
+            </div>
+        </div>                           <!-- Fim menu Pesquisa - ok -->
+        <div class="container">
+            <div class="containerint">
+                <div class="leftside"> <!-- Inicio leftside - ok -->
+                    <div class="slideShow" id="slideShow"> <!-- Inicio slideShow - ok -->
+                        <div class="slidebolinhas"> <!-- Inicio slidebolinhas - ok -->
+                            <div class="bolinha" onclick="mudarSlide(0)"></div>
+                            <div class="bolinha" onclick="mudarSlide(1)"></div>
+                            <div class="bolinha" onclick="mudarSlide(2)"></div>
+                            <div class="bolinha" onclick="mudarSlide(3)"></div>
+                        </div>                      <!-- Fim slidebolinhas - ok -->
+                        <div class="slideshowarea"> <!-- Inicio slideshowarea - ok -->
+                            <a href="http://www.google.com.br"> 
+                                <div class="slide" style="background-image:url('http://www.google.com.br/google.jpg')">.
+                                    <div class="slideinfo">
+                                        <div class="slideinfo_titulo">Título de teste 1</div>
+                                        <div class="slideinfo_subtitulo">Subtítulo de teste</div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="http://www.google.com.br">
+                                <div class="slide" style="background-image:url('http://www.google.com.br/google.jpg')">.
+                                    <div class="slideinfo">
+                                        <div class="slideinfo_titulo">Título de teste 2</div>
+                                        <div class="slideinfo_subtitulo">Subtítulo de teste</div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="http://www.google.com.br">
+                                <div class="slide" style="background-image:url('http://www.google.com.br/google.jpg')">.
+                                    <div class="slideinfo">
+                                        <div class="slideinfo_titulo">Título de teste 3</div>
+                                        <div class="slideinfo_subtitulo">Subtítulo de teste</div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="http://www.google.com.br">
+                                <div class="slide" style="background-image:url('http://www.google.com.br/google.jpg')">.
+                                    <div class="slideinfo">
+                                        <div class="slideinfo_titulo">Título de teste 4</div>
+                                        <div class="slideinfo_subtitulo">Subtítulo de teste</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>                      <!-- Fim slideshowarea - ok -->
+                    </div>                                 <!-- Fim slideShow - ok -->
+                    <div class="widget">
+                        <div class="widget_titulo">Notícias</div>
+                        <div class="widget_conteudo">
+                            <div class="noticiaArea1">
+                                <div class="noticiaItem noticiaMaior">
+                                    <div class="noticiaImg">
+                                        <img src="" border="0" width="80" height="80" />
+                                    </div>
+                                    <div class="noticiaTitulo">Alguma notícia.</div>
+                                    <div class="noticiaInfo">Vários commentários</div>
+                                </div>
+                            </div>
+                            <div class="noticiaArea2">
+                                <a href="http://www.google.com.br">
+                                    <div class="noticiaItem">
+                                        <div class="noticiaImg">
+                                            <img src="" border="0" width="80" height="80" />
+                                        </div>
+                                        <div class="noticiaTitulo">Algumas notícias.</div>
+                                        <div class="noticiaInfo">Vários commentários</div>
+                                    </div>
+                                </a>
+                                <a href="http://www.google.com.br">
+                                <div class="noticiaItem">
+                                    <div class="noticiaImg">
+                                        <img src="" border="0" width="80" height="80" />
+                                    </div>
+                                    <div class="noticiaTitulo">Algumas notícias.</div>
+                                    <div class="noticiaInfo">vários comentários</div>
+                                </div>
+                                </a>
+                                <a href="http://www.google.com.br">
+                                <div class="noticiaItem">
+                                    <div class="noticiaImg">
+                                        <img src="" border="0" width="80" height="80" />
+                                    </div>
+                                    <div class="noticiaTitulo">Alguma notícia.</div>
+                                    <div class="noticiaInfo">Vários commentários</div>
+                                </div>
+                                </a>
+                                <a href="http://www.google.com.br">
+                                <div class="noticiaItem">
+                                    <div class="noticiaImg">
+                                        <img src="" border="0" width="80" height="80" />
+                                    </div>
+                                    <div class="noticiaTitulo">Alguma notícia.</div>
+                                    <div class="noticiaInfo">Vários commentários</div>
+                                </div>
+                                </a>
+                            </div>
+                            <div style="clear:both"></div>
+                        </div>
+                    </div>
+                </div>                    <!-- Fim leftside - ok -->
+                <div class="rightside"> <!-- Inicio rightside - ok -->
+                    <div class="widget">
+                        <div class="widget_titulo">Social</div>
+                        <div class="widget_conteudo">
+                            <a href=""><img src="assets/images/rss.png" border"0" width="26" height="26"/></a>
+                            <a href=""><img src="assets/images/googleplus.png" border"0" width="26" height="26"/></a>
+                            <a href=""><img src="assets/images/facebook.png" border"0" width="26" height="26"/></a>
+                            <a href=""><img src="assets/images/twitter.png" border"0" width="26" height="26"/></a>
+                            <a href=""><img src="assets/images/youtube.png" border"0" width="26" height="26"/></a>
+                        </div>
+                    </div>
+                    <div class="widget">
+                        <div class="widget_titulo">Últimas Notícias</div>
+                        <div class="widget_conteudo">
+                            <div class="noticia_item">
+                                <a href="./">Título da noticia para ficar em duas linhas de texto.</a>
+                            </div>
+                            <div class="noticia_item">
+                                <a href="./">Título da noticia para ficar em duas linhas de texto.</a>
+                            </div>
+                            <div class="noticia_item">
+                                <a href="./">Título da noticia para ficar em duas linhas de texto.</a>
+                            </div>
+                            <div class="noticia_item">
+                                <a href="./">Título da noticia para ficar em duas linhas de texto.</a>
+                            </div>
+                            <div class="noticia_item">
+                                <a href="./">Título da noticia para ficar em duas linhas de texto.</a>
+                            </div>
+                         </div>
+                    </div>
+                    <div class="widget">
+                        <div class="widget_titulo">Publicidade</div>
+                        <div class="widget_conteudo">
+                            <img src="assets/images/fatec.jpg" border="0" width="275" height="275"/>
+                        </div>
+                    </div>
+                    <div class="widget">
+                        <div class="widget_titulo">Encontre-nos no Facebook</div>
+                        <div class="widget_conteudo">
+                                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fcentropaulasouza%2F&tabs&width=275&height=154&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="275" height="154" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                        </div>
+                    </div>
+                </div>                     <!-- Fim rightside - ok -->
+            </div>
+        </div>
+    </body>
+</html>
+
+
+
+
